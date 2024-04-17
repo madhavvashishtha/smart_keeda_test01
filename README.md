@@ -1,1 +1,1 @@
-my remot init
+1st RedaME remot init
