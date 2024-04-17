@@ -1,0 +1,33 @@
+
+
+<mat-card style="background-color: rgb(255, 255, 255);">
+    <mat-card-title>    
+       My Profile
+    </mat-card-title>
+    <mat-card-content style="justify-content: center;margin: auto;text-align: center;">
+        <img  src='https://randomuser.me/api/portraits/men/3.jpg' style="width: 100px; height: 100px; border-radius: 50%;"   />
+
+  
+      <h3>  {{profileDetail[0].name}}</h3>
+      <p> {{profileDetail[0].description}}</p>
+  
+    </mat-card-content>
+    <mat-card-footer style="margin: 20px;text-align: center;"> 
+        <div style="display: inline-flex;"> 
+                                        <div style="margin: 10px;padding: 10px;box-shadow: inset 0 0 10px #dfdfdf;border-radius: 3px;"> Photo<br><p>{{profileDetail[0].photosCount}}</p></div>
+                                        <div style="margin: 10px;padding: 10px;box-shadow: inset 0 0 10px #dfdfdf;border-radius: 3px;"> Followers<br><p>{{profileDetail[0].followersCount}}</p></div>
+                                        <div style="margin: 10px;padding: 10px;box-shadow: inset 0 0 10px #dfdfdf;border-radius: 3px;"> Follows<br><p>{{profileDetail[0].followsCount}}</p></div>
+        </div>
+         </mat-card-footer>
+  </mat-card>  
+
+
+  <mat-grid-list cols="3" rowHeight="200px">
+
+    <mat-grid-tile *ngFor="let image of imgInProfi let j=index"   >
+      <img  [src]="image.image" fill width="auto" height="auto" >
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+

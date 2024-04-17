@@ -1,0 +1,89 @@
+
+#imgMain {
+    width: 100%;
+    max-width: 10%;
+    height: auto;
+    border-radius: 50%;
+  }
+  #imgList{
+    width: 10%;
+    border-radius: 50%;
+  }
+  
+  div.scroll-container {
+    background-color: #33333300;
+    overflow: auto;
+    scrollbar-width: 1px;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+     mat-grid-tile{
+        transition: all .2s ease-in-out; 
+     
+     }
+
+  mat-grid-tile:hover{
+    z-index: 2;   
+    transform: scale(1.1); 
+
+ 
+  }
+  
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+  
+    
+  }
+
+
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    margin: 0 10px;
+  }
+
+  
+ 
+  
+#postImgs{
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+   justify-content: center;
+}
+
+.tile-image {
+    width:100%;
+    height: auto;
+  }
+  
+
+  .cardNeonBoarder{
+    box-shadow: 0 0 10px 5px #48abe0,
+              0 0 20px 7px #ebecca,
+              0 0 25px 20px #8a2be2,
+              0 0 30px 25px #ffffff;
+
+    height: auto;
+    background-color: rgb(218, 0, 252);
+    border-radius: 7px; 
+    margin: 5px; 
+    margin-bottom: 100px; 
+    margin-top: 100px;
+    padding: 20px;
+    scale: .85;
+  }

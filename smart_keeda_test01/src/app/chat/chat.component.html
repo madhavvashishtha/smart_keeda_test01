@@ -1,0 +1,23 @@
+<h2 style="margin: 10px;">Conversation !</h2>
+
+
+   
+<mat-grid-list    cols=1 rowHeight="70px" [gutterSize]="'5px'" >
+    <mat-grid-tile *ngFor="let induviConver of converstation_fir; let j=index" 
+     [colspan]="1"
+    [rowspan]="1" style="width: 100vw;margin-top:20px;margin-left: 10px;border-radius: 5px; background-color: rgb(93, 93, 93);border-width: 10px;padding: 3px;" >
+   <mat-card  style=" padding: 5px;border-radius: 15px ; background-color: rgb(0, 0, 0);margin: 70px;border-width: 10px;">
+    <mat-card-content >
+        <div style="width: 100vw;display: inline-flex;background-color: rgb(255, 255, 255);">
+        <img src={{induviConver.profileImage}} width="50px" height="50px" style=" border-radius: 50%; float: left;"/>
+                <div style="margin-top: 8px; text-align:start;margin-left: 5px;"><p>{{induviConver.name}}</p>
+               <p style="color: rgb(129, 129, 129);">{{induviConver.lastMessage}}  <mat-icon style="float: right;">reply</mat-icon></p> 
+              
+            </div>
+          
+    </div>
+
+    </mat-card-content>
+   </mat-card>
+    </mat-grid-tile>
+    </mat-grid-list>
